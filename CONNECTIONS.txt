@@ -1,0 +1,7 @@
+HC-SR04 VCC   -> Arduino 5V
+HC-SR04 GND   -> Arduino GND
+HC-SR04 TRIG  -> Arduino D9
+HC-SR04 ECHO  -> Arduino D10
+Servo V+      -> Arduino 5V (simulation)
+Servo GND     -> Arduino GND
+Servo PWM     -> Arduino D6

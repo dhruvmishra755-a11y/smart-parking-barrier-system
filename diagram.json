@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "author": "Dhruv Mishra",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-uno",
+      "id": "uno",
+      "top": 58.2,
+      "left": 18.6,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic1",
+      "top": -27.3,
+      "left": 475.9,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo1",
+      "top": -11.6,
+      "left": 768,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [
+      "ultrasonic1:GND",
+      "uno:GND.1",
+      "black",
+      []
+    ],
+    [
+      "uno:5V",
+      "ultrasonic1:VCC",
+      "red",
+      [
+        "v38.3",
+        "h-188.2",
+        "v-307.2",
+        "h451.2",
+        "v105.6",
+        "h105.6"
+      ]
+    ],
+    [
+      "uno:9",
+      "ultrasonic1:TRIG",
+      "green",
+      [
+        "v-28.8",
+        "h240.8",
+        "v67.2",
+        "h134.4",
+        "v-9.6"
+      ]
+    ],
+    [
+      "uno:10",
+      "ultrasonic1:ECHO",
+      "green",
+      [
+        "v-19.2",
+        "h240.7",
+        "v67.2",
+        "h153.6"
+      ]
+    ],
+    [
+      "servo1:V+",
+      "uno:5V",
+      "red",
+      [
+        "h-96",
+        "v-115.1",
+        "h-556.8",
+        "v0",
+        "h-172.8",
+        "v384",
+        "h240"
+      ]
+    ],
+    [
+      "servo1:GND",
+      "uno:GND.1",
+      "black",
+      [
+        "h-86.4",
+        "v-134.4",
+        "h-518.4",
+        "v134.4",
+        "h-28.8"
+      ]
+    ],
+    [
+      "servo1:PWM",
+      "uno:6",
+      "green",
+      [
+        "h-115.2",
+        "v-95.8",
+        "h-432"
+      ]
+    ]
+  ],
+  "dependencies": {}
+}
